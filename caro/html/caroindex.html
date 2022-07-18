@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cờ caro</title>
+    <link rel="stylesheet" href="../css/caroCss.css">
+    <link rel="stylesheet" href="../js/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Nhập số hàng và số cột:</h4>
+
+                <input type="number" class="form-control" placeholder="Số Hàng" id="row" name="row" min="5" max="10" pattern="[3-10]"><br>             
+                <input type="number" class="form-control" placeholder="Số Cột" id="column" name="column" min="5" max="10"><br>
+        
+                <h4>Nhập tên người chơi:</h4>
+                <input type="text" class="form-control" id="name1" name="name1" placeholder=" Người chơi 1 (O)"><br>
+                
+                <input type="text" class="form-control" id="name2" name="name2" placeholder=" Người chơi 2 (X)"><br>
+                
+                <button type="button" class="btn btn-info" onclick="start();">Bắt đầu</button>
+                <button type="button" class="btn btn-info" onclick="start();">Chơi lại</button><br><br>
+                <h4 id="turn"></h4>
+            </div>
+            <div id="main" class="col">
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/caroJavascript.js"></script>
+</body>
+</html>
